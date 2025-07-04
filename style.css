@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    /* container içindeki öğeleri sağ tarafa hizalar */
+    align-items: center;
+    padding: 10px 20px;
+}
+.topbar a {
+    margin-left: 15px;
+    color: #5f6368;
+    text-decoration: none;
+    /* altını çizili görünümünü kaldır */
+    font-size: 14px;
+}
+.topbar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* köşeleri yuvarlar */
+    margin-left: 15px;
+}
+.logo {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.logo img {
+    width: 272px;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    /* container içindeki öğeleri yatay olarak ortalar */
+    align-items: center;
+    /* container içindeki öğeleri dikey olarak ortalar */
+    margin-top: 30px;
+}
+.search-area {
+    display: flex;
+    /* Öğeleri esnek ve güçlü bir şekilde hizalamak, sıralamak ve yerleştirmek için kullanılır */
+    align-items: center;
+    /* container içindeki öğeleri dikey olarak ortalar */
+    background-color: #fff;
+    border-radius: 24px;
+    /* köşeleri yuvarlar */
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    padding: 0 14px;
+    width: 480px;
+    height: 44px;
+}
+.search-area input[type="text"] {
+    flex: 1;
+    /* eşit oranda genişle */
+    border: none;
+    outline: none;
+    /*  input alanını tamamen sadeleştirir */
+    font-size: 16px;
+    padding: 10px;
+}
+.search-area img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    /* Fare imlecini el simgesine çevirerek öğenin tıklanabilir olduğunu belirtir */
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    /* container içindeki öğeleri yatay olarak ortalar */
+    margin-top: 30px;
+}
+.buttons input[type="button"] {
+    margin: 0 5px;
+    padding: 0 16px;
+    height: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #5f6368;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    /* Fare imlecini el simgesine çevirerek öğenin tıklanabilir olduğunu belirtir */
+}
+.buttons input[type="button"]:hover {
+    border: 1px solid #c6c6c6;
+}
+
+.footer {
+    display: flex;
+    /* Öğeleri esnek ve düzenli biçimde yerleştirmeni sağlar. */
+    justify-content: space-between;
+    /*  İlk ve son öğe iki uca yerleşir, aradakiler eşit boşluklarla dağılır. */
+    flex-wrap: wrap;
+    /*  Flex öğeler sığmadığında alt satıra iner. */
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+    position: fixed;
+    /* Öğeyi ekrana sabitler, scroll edilse bile aynı yerde kalır. */
+    bottom: 0;
+    width: 100%;
+    list-style: none;
+    /* Tüm liste işaretlerini ve görsel efektleri kaldırır. */
+}
+
+.footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* Liste öğelerindeki madde işaretlerini kaldırır. */
+}
+
+.footer li {
+    margin-right: 20px;
+}
+
+.footer a {
+    color: #5f6368;
+    text-decoration: none;
+    /*  Metindeki çizgileri ve süslemeleri kaldırır. En çok bağlantılardaki alt çizgiyi silmek için kullanılır. */
+}
